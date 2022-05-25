@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="logo.png" alt="" srcset="">
+        </div>
+        <ul>
+            <li><a href="https://github.com/rbaiak" target="_blank">  Github </a> 
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/Rbaiak2266" target="_blank"> Linkedin </a>
+            </li>
+            <li>
+                <a href="mailto:rgrdev09@gmail.com" target="_blank"> E-mail </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Roger Baiak </h1>
+                <h5> Front-end Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div style="display:none ;" id="about">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quis aspernatur similique consectetur voluptate. Corrupti rem nulla voluptates aliquam quo cumque consectetur autem perferendis eligendi praesentium, doloremque natus esse placeat?
+                </p>
+            </div>
+            <div id="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/9089ea1ace.js" crossorigin="anonymous"></script>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
